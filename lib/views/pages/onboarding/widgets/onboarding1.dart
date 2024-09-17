@@ -19,7 +19,7 @@ class Onboarding1 extends StatelessWidget {
           fWeight: FontWeight.bold,
         ),
         const SizedBox(
-          height: 20,
+          height: 20
         ),
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 30),
