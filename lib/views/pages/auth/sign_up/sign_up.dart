@@ -24,7 +24,7 @@ class SignUpPage extends StatelessWidget {
               color: Color(0xff191C32),
             ),
             SizedBox(
-              height: 25,
+              height: 25
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
