@@ -21,10 +21,11 @@ class SplashPage extends StatelessWidget {
             const Text(
               "Traveler",
               style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 40,
-                  color: Color(0xff1BBA85),
-                  letterSpacing: 5),
+                fontWeight: FontWeight.bold,
+                fontSize: 40,
+                color: Color(0xff1BBA85),
+                letterSpacing: 5,
+              ),
             ),
           ],
         ),
