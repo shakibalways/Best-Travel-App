@@ -23,7 +23,9 @@ class SignUpPage extends StatelessWidget {
               fWeight: FontWeight.bold,
               color: Color(0xff191C32),
             ),
-            SizedBox(height: 25),
+            SizedBox(
+              height: 25,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -32,7 +34,9 @@ class SignUpPage extends StatelessWidget {
                   text: "Google",
                   tColor: Color(0xffD44638),
                 ),
-                SizedBox(width: 10),
+                SizedBox(
+                  width: 10,
+                ),
                 DoubleContainer(
                   containerColor: Color(0xffAEC5F3),
                   text: "Facebook",
