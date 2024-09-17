@@ -45,10 +45,11 @@ class WelcomePage extends StatelessWidget {
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
-                        offset: const Offset(1, 2),
-                        color: Colors.grey.shade300,
-                        blurRadius: 2,
-                        spreadRadius: 2)
+                      offset: const Offset(1, 2),
+                      color: Colors.grey.shade300,
+                      blurRadius: 2,
+                      spreadRadius: 2,
+                    )
                   ],
                 ),
                 child: const Center(
