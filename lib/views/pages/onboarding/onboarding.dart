@@ -59,7 +59,7 @@ class OnboardingPage extends StatelessWidget {
                               duration: const Duration(milliseconds: 400),
                               curve: Curves.easeIn);
                         },
-                      )),
+                      ),),
               ],
             ),
           ),
