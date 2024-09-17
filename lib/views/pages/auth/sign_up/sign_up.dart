@@ -34,9 +34,7 @@ class SignUpPage extends StatelessWidget {
                   text: "Google",
                   tColor: Color(0xffD44638),
                 ),
-                SizedBox(
-                  width: 10
-                ),
+                SizedBox(width: 10),
                 DoubleContainer(
                   containerColor: Color(0xffAEC5F3),
                   text: "Facebook",
@@ -44,9 +42,7 @@ class SignUpPage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
-              height: 25
-            ),
+            SizedBox(height: 25),
             MyCustomText(
               text: "OR",
               fSize: 15,
@@ -57,24 +53,16 @@ class SignUpPage extends StatelessWidget {
               child: Column(
                 children: [
                   MyUserTextField(),
-                  SizedBox(
-                    height: 10
-                  ),
+                  SizedBox(height: 10),
                   MyEmailTextField(),
-                  SizedBox(
-                    height: 10
-                  ),
+                  SizedBox(height: 10),
                   MyPasswordTextField(),
-                  SizedBox(
-                    height: 10
-                  ),
+                  SizedBox(height: 10),
                   MyConfirmPassTextField(),
                 ],
               ),
             ),
-            SizedBox(
-              height: 25
-            ),
+            SizedBox(height: 25),
             MyCustomButton(
               buttonName: "Register",
               fWieght: FontWeight.w500,
