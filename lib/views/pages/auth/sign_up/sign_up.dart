@@ -23,9 +23,7 @@ class SignUpPage extends StatelessWidget {
               fWeight: FontWeight.bold,
               color: Color(0xff191C32),
             ),
-            SizedBox(
-              height: 25
-            ),
+            SizedBox(height: 25),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
