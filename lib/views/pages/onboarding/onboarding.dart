@@ -11,7 +11,6 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
 
-
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(OnboardingController());
@@ -45,21 +44,23 @@ class OnboardingPage extends StatelessWidget {
                   controller: controller.pageController,
                   count: 3,
                 ),
-                Obx(() => controller.onLastPage.value
-                    ? MyCustomText(
-                        text: "Done",
-                        onTap: () {
-                          Get.to(() => const SignUpPage());
-                        },
-                      )
-                    : MyCustomText(
-                        text: "Next",
-                        onTap: () {
-                          controller.pageController.nextPage(
-                              duration: const Duration(milliseconds: 400),
-                              curve: Curves.easeIn);
-                        },
-                      ),),
+                Obx(
+                  () => controller.onLastPage.value
+                      ? MyCustomText(
+                          text: "Done",
+                          onTap: () {
+                            Get.to(() => const SignUpPage());
+                          },
+                        )
+                      : MyCustomText(
+                          text: "Next",
+                          onTap: () {
+                            controller.pageController.nextPage(
+                                duration: const Duration(milliseconds: 400),
+                                curve: Curves.easeIn);
+                          },
+                        ),
+                ),
               ],
             ),
           ),
