@@ -11,7 +11,7 @@ class Onboarding2 extends StatelessWidget {
       children: [
         Image.asset("assets/onboarding/destination.png"),
         const SizedBox(
-          height: 25,
+          height: 25
         ),
         const MyCustomText(
           text: "Choose a Destination",
@@ -19,7 +19,7 @@ class Onboarding2 extends StatelessWidget {
           fWeight: FontWeight.bold,
         ),
         const SizedBox(
-          height: 20,
+          height: 20
         ),
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 30),
