@@ -10,17 +10,13 @@ class Onboarding1 extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset("assets/onboarding/mountain.png"),
-        const SizedBox(
-          height: 25
-        ),
+        const SizedBox(height: 25),
         const MyCustomText(
           text: "Explore Destinations",
           fSize: 28,
           fWeight: FontWeight.bold,
         ),
-        const SizedBox(
-          height: 20
-        ),
+        const SizedBox(height: 20),
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: const MyCustomText(
