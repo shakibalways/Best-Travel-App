@@ -11,7 +11,7 @@ class Onboarding1 extends StatelessWidget {
       children: [
         Image.asset("assets/onboarding/mountain.png"),
         const SizedBox(
-          height: 25,
+          height: 25
         ),
         const MyCustomText(
           text: "Explore Destinations",
