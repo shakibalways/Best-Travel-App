@@ -13,21 +13,21 @@ class SignUpPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
-            const MyCustomText(
+            MyCustomText(
               text: "Register",
               fSize: 40,
               fWeight: FontWeight.bold,
               color: Color(0xff191C32),
             ),
-            const SizedBox(
+            SizedBox(
               height: 25,
             ),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 DoubleContainer(
@@ -45,16 +45,16 @@ class SignUpPage extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(
+            SizedBox(
               height: 25,
             ),
-            const MyCustomText(
+            MyCustomText(
               text: "OR",
               fSize: 15,
               color: Colors.grey,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+              padding: EdgeInsets.symmetric(horizontal: 10),
               child: Column(
                 children: [
                   MyUserTextField(),
