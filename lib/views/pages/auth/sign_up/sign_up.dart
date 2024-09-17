@@ -4,9 +4,8 @@ import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:best_travel_app/views/pages/auth/login/widget/my_email_text_field.dart';
 import 'package:best_travel_app/views/pages/auth/login/widget/my_password_text_field.dart';
 import 'package:best_travel_app/views/pages/auth/sign_up/widget/my_confirm_pass_text_field.dart';
+import 'package:best_travel_app/views/pages/auth/sign_up/widget/my_user_text_field.dart';
 import 'package:flutter/material.dart';
-
-import 'widget/my_user_text_field.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
@@ -73,8 +72,13 @@ class SignUpPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 25,),
-            MyCustomButton(buttonName: "Register",fWieght: FontWeight.w500,)
+            SizedBox(
+              height: 25,
+            ),
+            MyCustomButton(
+              buttonName: "Register",
+              fWieght: FontWeight.w500,
+            )
           ],
         ),
       ),
