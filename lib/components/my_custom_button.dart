@@ -6,16 +6,19 @@ class MyCustomButton extends StatelessWidget {
     super.key,
     required this.buttonName,
     this.fWieght,
-    this.fSize, this.margin, this.color,
+    this.fSize, this.margin, this.color, this.onTap,
   });
+
   final String buttonName;
   final FontWeight? fWieght;
   final double? fSize;
   final Color ? color;
   final EdgeInsetsGeometry? margin;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap:onTap ,
       child: Container(
         height: Get.height * 0.07,
         width: Get.width,
