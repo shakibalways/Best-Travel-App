@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
-
   @override
   Widget build(BuildContext context) {
     Get.put(SplashController());
