@@ -2,6 +2,7 @@ import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+
 class DoubleContainer extends StatelessWidget {
   const DoubleContainer({
     super.key,
