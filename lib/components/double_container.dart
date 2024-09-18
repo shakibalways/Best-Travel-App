@@ -21,7 +21,7 @@ class DoubleContainer extends StatelessWidget {
       onTap: onTap,
       child: Container(
         height: Get.height * 0.08,
-        width: Get.width / 2.2,
+        width:Get.width *0.44,
         decoration: BoxDecoration(
           color: containerColor,
           borderRadius: BorderRadius.circular(5),

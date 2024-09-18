@@ -10,7 +10,7 @@ class MyCustomText extends StatelessWidget {
     this.maxLines,
     this.oflow,
     this.color,
-    this.onTap,
+    this.onTap, this.lSpacing,
   });
   final String text;
   final double? fSize;
@@ -20,6 +20,7 @@ class MyCustomText extends StatelessWidget {
   final int? maxLines;
   final TextOverflow? oflow;
   final void Function()? onTap;
+  final double? lSpacing;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -33,6 +34,7 @@ class MyCustomText extends StatelessWidget {
           fontSize: fSize ?? 15,
           fontWeight: fWeight ?? FontWeight.normal,
           color: color ?? Colors.black,
+          letterSpacing: lSpacing,
         ),
       ),
     );

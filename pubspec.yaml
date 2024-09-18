@@ -19,6 +19,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   get: ^4.6.6
   smooth_page_indicator: ^1.2.0+2
+  http: ^1.2.2
 
 
 dev_dependencies:
