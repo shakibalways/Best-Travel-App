@@ -22,9 +22,10 @@ class WelcomePage extends StatelessWidget {
                 const Text(
                   "Welcome",
                   style: TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 3),
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 3,
+                  ),
                 ),
                 Image.asset("assets/vector/bottom.png"),
               ],
