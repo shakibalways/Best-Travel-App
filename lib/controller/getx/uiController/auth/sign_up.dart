@@ -1,5 +1,5 @@
 import 'package:best_travel_app/controller/api/auth/sign_up.dart';
-import 'package:best_travel_app/views/pages/onboarding/onboarding.dart';
+import 'package:best_travel_app/views/pages/auth/login/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -21,10 +21,11 @@ class SignUpController extends GetxController {
       password: passwordController.text,
       confirmPass: confirmPasswordController.text,
     );
-    if (status) {
-      Get.to(() => const OnboardingPage());
-    }
     isLoading.value = false;
+    if (status) {
+      Get.to(() => const LoginPage());
+    }
+    return;
   }
 
   @override

@@ -1,4 +1,5 @@
 import 'package:best_travel_app/components/my_custom_button.dart';
+import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:best_travel_app/controller/getx/uiController/auth/otp.dart';
 import 'package:best_travel_app/views/pages/auth/otp/widgets/my_custom_otp_auth.dart';
 import 'package:flutter/material.dart';
@@ -23,20 +24,19 @@ class OtpAuthenticationPage extends StatelessWidget {
             const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "Verify Code",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 25,
-                  ),
+                MyCustomText(
+                  text: "Verify Code",
+                  fWeight: FontWeight.bold,
+                  fSize: 25,
                 ),
                 SizedBox(height: 10),
-                Text(
-                  "check your sms inbox, we have sent you the code at +00 000 0000",
-                  style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.grey),
+                MyCustomText(
+                  maxLines: 2,
+                  fSize: 18,
+                  fWeight: FontWeight.w600,
+                  color: Colors.grey,
+                  text:
+                      "check your sms inbox, we have sent you the code at +00 000 0000",
                 ),
               ],
             ),

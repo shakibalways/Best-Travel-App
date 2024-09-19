@@ -2,6 +2,7 @@ import 'package:best_travel_app/components/double_container.dart';
 import 'package:best_travel_app/components/my_custom_button.dart';
 import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:best_travel_app/controller/getx/uiController/auth/sign_up.dart';
+import 'package:best_travel_app/views/pages/auth/login/login.dart';
 import 'package:best_travel_app/views/pages/auth/login/widget/my_email_text_field.dart';
 import 'package:best_travel_app/views/pages/auth/login/widget/my_password_text_field.dart';
 import 'package:best_travel_app/views/pages/auth/sign_up/widget/my_confirm_pass_text_field.dart';
@@ -14,7 +15,7 @@ class SignUpPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(SignUpController());
+    final signUpController = Get.put(SignUpController());
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -54,7 +55,7 @@ class SignUpPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 const MyCustomText(
@@ -62,44 +63,45 @@ class SignUpPage extends StatelessWidget {
                   fSize: 15,
                   color: Colors.grey,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Form(
-                  key: controller.formKey,
+                  key: signUpController.formKey,
                   child: Column(
                     children: [
                       MyUserTextField(
-                        userNameController: controller.userNameController,
+                        userNameController: signUpController.userNameController,
                       ),
                       const SizedBox(height: 10),
                       MyEmailTextField(
-                        emailController: controller.emailController,
+                        emailController: signUpController.emailController,
                       ),
                       const SizedBox(height: 10),
                       Obx(
                         () => MyPasswordTextField(
                           suffixWidget: GestureDetector(
                               onTap: () {
-                                controller.toggleVisibility();
+                                signUpController.toggleVisibility();
                               },
-                              child: controller.isVisibility.value
+                              child: signUpController.isVisibility.value
                                   ? const Icon(Icons.visibility)
                                   : const Icon(Icons.visibility_off)),
-                          passwordController: controller.passwordController,
-                          obscureText: controller.isVisibility.value,
+                          passwordController:
+                              signUpController.passwordController,
+                          obscureText: signUpController.isVisibility.value,
                         ),
                       ),
                       const SizedBox(height: 10),
                       MyConfirmPassTextField(
                         confirmPasswordController:
-                            controller.confirmPasswordController,
-                        obscureText: controller.isVisibility.value,
+                            signUpController.confirmPasswordController,
+                        obscureText: signUpController.isVisibility.value,
                         suffixIcon: GestureDetector(
                             onTap: () {
-                              controller.toggleVisibility();
+                              signUpController.toggleVisibility();
                             },
-                            child: controller.isVisibility.value
+                            child: signUpController.isVisibility.value
                                 ? const Icon(Icons.visibility)
                                 : const Icon(Icons.visibility_off)),
                       ),
@@ -110,24 +112,24 @@ class SignUpPage extends StatelessWidget {
                 Column(
                   children: [
                     Obx(
-                      () => controller.isLoading.value
-                          ? const Center(
-                              child: CircularProgressIndicator(),
-                            )
-                          : MyCustomButton(
+                      () => signUpController.isLoading.value
+                          ? MyCustomButton(
                               buttonName: "Register",
                               fSize: 18,
                               color: Colors.white,
                               fWieght: FontWeight.w500,
                               onTap: () {
-                                controller.isLoading.value = true;
-                                if (!controller.formKey.currentState!
+                                if (!signUpController.formKey.currentState!
                                     .validate()) {
                                   return;
                                 }
-                                 controller.signUpFun();
-                                controller.isLoading.value = false;
+                                signUpController.signUpFun();
                               },
+                            )
+                          : const Center(
+                              child: CircularProgressIndicator(
+                                backgroundColor: Colors.red,
+                              ),
                             ),
                     ),
                     const SizedBox(
@@ -143,7 +145,7 @@ class SignUpPage extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        // Get.to(() => SignInPage());
+                        Get.offAll(() => const LoginPage());
                       },
                       child: const MyCustomText(
                         text: "LOGIN",
