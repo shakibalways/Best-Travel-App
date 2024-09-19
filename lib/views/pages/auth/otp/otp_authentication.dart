@@ -43,7 +43,7 @@ class OtpAuthenticationPage extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 30,
+              height: 30
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
