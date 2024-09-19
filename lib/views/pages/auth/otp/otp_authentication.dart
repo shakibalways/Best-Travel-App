@@ -31,7 +31,7 @@ class OtpAuthenticationPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 10
                 ),
                 Text(
                   "check your sms inbox, we have sent you the code at +00 000 0000",
