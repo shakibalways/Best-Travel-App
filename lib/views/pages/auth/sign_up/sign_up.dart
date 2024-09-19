@@ -109,12 +109,26 @@ class SignUpPage extends StatelessWidget {
                 const SizedBox(height: 50),
                 Column(
                   children: [
-                    const MyCustomButton(
-                      buttonName: "Register",
-                      fSize: 18,
-                      color: Colors.white,
-                      fWieght: FontWeight.w500,
-
+                    Obx(
+                      () => controller.isLoading.value
+                          ? const Center(
+                              child: CircularProgressIndicator(),
+                            )
+                          : MyCustomButton(
+                              buttonName: "Register",
+                              fSize: 18,
+                              color: Colors.white,
+                              fWieght: FontWeight.w500,
+                              onTap: () {
+                                controller.isLoading.value = true;
+                                if (!controller.formKey.currentState!
+                                    .validate()) {
+                                  return;
+                                }
+                                 controller.signUpFun();
+                                controller.isLoading.value = false;
+                              },
+                            ),
                     ),
                     const SizedBox(
                       height: 25,
