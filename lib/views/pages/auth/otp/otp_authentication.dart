@@ -30,9 +30,7 @@ class OtpAuthenticationPage extends StatelessWidget {
                     fontSize: 25,
                   ),
                 ),
-                SizedBox(
-                  height: 10
-                ),
+                SizedBox(height: 10),
                 Text(
                   "check your sms inbox, we have sent you the code at +00 000 0000",
                   style: TextStyle(
@@ -42,9 +40,7 @@ class OtpAuthenticationPage extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(
-              height: 30
-            ),
+            const SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
