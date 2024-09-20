@@ -24,7 +24,7 @@ class SignUpController extends GetxController {
     );
     isLoading.value = false;
     if (status) {
-      Get.to(() => const LoginPage());
+      Get.offAll(() => const LoginPage());
     }
     return;
   }
