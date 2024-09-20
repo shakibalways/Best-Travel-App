@@ -49,7 +49,7 @@ class OtpAuthenticationPage extends StatelessWidget {
                   controller: otpController.otp1,
                 ),
                 MyCustomOtpAuth(
-                  controller: otpController.otp2,
+                  controller: otpController.otp2
                 ),
                 MyCustomOtpAuth(
                   controller: otpController.otp3
