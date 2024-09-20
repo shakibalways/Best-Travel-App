@@ -45,18 +45,10 @@ class OtpAuthenticationPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                MyCustomOtpAuth(
-                  controller: otpController.otp1
-                ),
-                MyCustomOtpAuth(
-                  controller: otpController.otp2
-                ),
-                MyCustomOtpAuth(
-                  controller: otpController.otp3
-                ),
-                MyCustomOtpAuth(
-                  controller: otpController.otp4
-                ),
+                MyCustomOtpAuth(controller: otpController.otp1),
+                MyCustomOtpAuth(controller: otpController.otp2),
+                MyCustomOtpAuth(controller: otpController.otp3),
+                MyCustomOtpAuth(controller: otpController.otp4),
               ],
             ),
             const Spacer(),
