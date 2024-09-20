@@ -41,6 +41,7 @@ class SignUpController extends GetxController {
   void toggleVisibility() {
     isVisibility.value = !isVisibility.value;
   }
+
   void toggleConfirmVisibility() {
     isConfirmVisibility.value = !isConfirmVisibility.value;
   }
