@@ -12,6 +12,7 @@ class SignUpController extends GetxController {
       TextEditingController();
   RxBool isLoading = false.obs;
   RxBool isVisibility = true.obs;
+  RxBool isConfirmVisibility = true.obs;
 
   signUpFun() async {
     isLoading.value = true;
@@ -39,6 +40,9 @@ class SignUpController extends GetxController {
 
   void toggleVisibility() {
     isVisibility.value = !isVisibility.value;
+  }
+  void toggleConfirmVisibility() {
+    isConfirmVisibility.value = !isConfirmVisibility.value;
   }
 
   @override

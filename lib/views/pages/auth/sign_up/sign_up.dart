@@ -96,12 +96,12 @@ class SignUpPage extends StatelessWidget {
                       MyConfirmPassTextField(
                         confirmPasswordController:
                             signUpController.confirmPasswordController,
-                        obscureText: signUpController.isVisibility.value,
+                        obscureText: signUpController.isConfirmVisibility.value,
                         suffixIcon: GestureDetector(
                             onTap: () {
                               signUpController.toggleVisibility();
                             },
-                            child: signUpController.isVisibility.value
+                            child: signUpController.isConfirmVisibility.value
                                 ? const Icon(Icons.visibility)
                                 : const Icon(Icons.visibility_off)),
                       ),
