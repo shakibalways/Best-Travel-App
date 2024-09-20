@@ -114,7 +114,7 @@ class SignUpPage extends StatelessWidget {
                 const SizedBox(height: 50),
                 Column(
                   children: [
-                    Obx(() => signUpController.isLoading.isFalse
+                    Obx(() => signUpController.isLoading.isTrue
                         ? const Center(
                             child: CircularProgressIndicator(
                               backgroundColor: Colors.red,
