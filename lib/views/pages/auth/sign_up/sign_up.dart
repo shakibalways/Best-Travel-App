@@ -93,18 +93,21 @@ class SignUpPage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 10),
-                     Obx(()=> MyConfirmPassTextField(
-                       confirmPasswordController:
-                       signUpController.confirmPasswordController,
-                       obscureText: signUpController.isConfirmVisibility.value,
-                       suffixIcon: GestureDetector(
-                           onTap: () {
-                             signUpController.toggleVisibility();
-                           },
-                           child: signUpController.isConfirmVisibility.value
-                               ? const Icon(Icons.visibility)
-                               : const Icon(Icons.visibility_off)),
-                     ),)
+                      Obx(
+                        () => MyConfirmPassTextField(
+                          confirmPasswordController:
+                              signUpController.confirmPasswordController,
+                          obscureText:
+                              signUpController.isConfirmVisibility.value,
+                          suffixIcon: GestureDetector(
+                              onTap: () {
+                                signUpController.toggleVisibility();
+                              },
+                              child: signUpController.isConfirmVisibility.value
+                                  ? const Icon(Icons.visibility)
+                                  : const Icon(Icons.visibility_off)),
+                        ),
+                      )
                     ],
                   ),
                 ),
@@ -112,7 +115,7 @@ class SignUpPage extends StatelessWidget {
                 Column(
                   children: [
                     Obx(
-                      () => signUpController.isLoading.value
+                      () => signUpController.isLoading.isTrue
                           ? MyCustomButton(
                               buttonName: "Register",
                               fSize: 18,
