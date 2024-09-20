@@ -1,6 +1,6 @@
 import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:best_travel_app/controller/getx/uiController/onboarding.dart';
-import 'package:best_travel_app/views/pages/auth/sign_up/sign_up.dart';
+import 'package:best_travel_app/views/pages/auth/login/login.dart';
 import 'package:best_travel_app/views/pages/onboarding/widgets/onboarding1.dart';
 import 'package:best_travel_app/views/pages/onboarding/widgets/onboarding2.dart';
 import 'package:best_travel_app/views/pages/onboarding/widgets/onboarding3.dart';
@@ -48,7 +48,7 @@ class OnboardingPage extends StatelessWidget {
                       ? MyCustomText(
                           text: "Done",
                           onTap: () {
-                            Get.to(() => const SignUpPage());
+                            Get.to(() => const LoginPage());
                           },
                         )
                       : MyCustomText(
