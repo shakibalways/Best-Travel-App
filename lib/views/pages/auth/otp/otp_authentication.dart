@@ -46,7 +46,7 @@ class OtpAuthenticationPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 MyCustomOtpAuth(
-                  controller: otpController.otp1,
+                  controller: otpController.otp1
                 ),
                 MyCustomOtpAuth(
                   controller: otpController.otp2
