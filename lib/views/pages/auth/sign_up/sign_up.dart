@@ -115,7 +115,7 @@ class SignUpPage extends StatelessWidget {
                 Column(
                   children: [
                     Obx(
-                      () => signUpController.isLoading.isTrue
+                      () => signUpController.isLoading.isFalse
                           ? MyCustomButton(
                               buttonName: "Register",
                               fSize: 18,
