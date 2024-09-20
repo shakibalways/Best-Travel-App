@@ -11,6 +11,7 @@ class OtpAuthenticationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final otpController = Get.put(OtpController());
+
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(
