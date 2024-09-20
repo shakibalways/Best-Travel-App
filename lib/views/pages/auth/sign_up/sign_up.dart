@@ -93,18 +93,18 @@ class SignUpPage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      MyConfirmPassTextField(
-                        confirmPasswordController:
-                            signUpController.confirmPasswordController,
-                        obscureText: signUpController.isConfirmVisibility.value,
-                        suffixIcon: GestureDetector(
-                            onTap: () {
-                              signUpController.toggleVisibility();
-                            },
-                            child: signUpController.isConfirmVisibility.value
-                                ? const Icon(Icons.visibility)
-                                : const Icon(Icons.visibility_off)),
-                      ),
+                     Obx(()=> MyConfirmPassTextField(
+                       confirmPasswordController:
+                       signUpController.confirmPasswordController,
+                       obscureText: signUpController.isConfirmVisibility.value,
+                       suffixIcon: GestureDetector(
+                           onTap: () {
+                             signUpController.toggleVisibility();
+                           },
+                           child: signUpController.isConfirmVisibility.value
+                               ? const Icon(Icons.visibility)
+                               : const Icon(Icons.visibility_off)),
+                     ),)
                     ],
                   ),
                 ),
