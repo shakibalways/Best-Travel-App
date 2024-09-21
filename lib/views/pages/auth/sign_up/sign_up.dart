@@ -64,7 +64,7 @@ class SignUpPage extends StatelessWidget {
                   color: Colors.grey,
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 20
                 ),
                 Form(
                   key: signUpController.formKey,
