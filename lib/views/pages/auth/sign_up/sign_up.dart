@@ -56,7 +56,7 @@ class SignUpPage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 20
                 ),
                 const MyCustomText(
                   text: "OR",
