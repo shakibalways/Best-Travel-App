@@ -10,5 +10,4 @@ class OnboardingController extends GetxController {
     pageController.dispose();
     super.onClose();
   }
-
 }
