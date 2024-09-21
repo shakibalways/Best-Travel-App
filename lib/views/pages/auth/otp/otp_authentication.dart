@@ -56,7 +56,7 @@ class OtpAuthenticationPage extends StatelessWidget {
               color: Colors.white,
               fWieght: FontWeight.w700,
               fSize: 18,
-            )
+            ),
           ],
         ),
       ),
