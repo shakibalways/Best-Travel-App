@@ -16,7 +16,7 @@ class LoginController extends GetxController {
       password: passwordController.text,
     );
     if (status) {
-      // Get.to(() => const OnboardingPage());
+
     }
     isLoading.value = false;
   }
