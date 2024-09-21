@@ -7,6 +7,7 @@ class SignUpService {
     required String password,
     required String confirmPass,
   }) async {
+
     try {
       Future.delayed(const Duration(seconds: 3));
       return true;
