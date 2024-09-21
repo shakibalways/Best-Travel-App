@@ -16,7 +16,6 @@ class LoginController extends GetxController {
       password: passwordController.text,
     );
     if (status) {
-
     }
     isLoading.value = false;
   }
