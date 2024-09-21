@@ -33,9 +33,7 @@ class SignUpPage extends StatelessWidget {
                       fWeight: FontWeight.bold,
                       color: Color(0xff191C32),
                     ),
-                    SizedBox(
-                      height: 25
-                    ),
+                    SizedBox(height: 25),
                     Row(
                       children: [
                         DoubleContainer(
@@ -43,9 +41,7 @@ class SignUpPage extends StatelessWidget {
                           text: "Google",
                           tColor: Color(0xffD44638),
                         ),
-                        SizedBox(
-                          width: 10
-                        ),
+                        SizedBox(width: 10),
                         DoubleContainer(
                           containerColor: Color(0xffAEC5F3),
                           text: "Facebook",
@@ -55,17 +51,13 @@ class SignUpPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 20
-                ),
+                const SizedBox(height: 20),
                 const MyCustomText(
                   text: "OR",
                   fSize: 15,
                   color: Colors.grey,
                 ),
-                const SizedBox(
-                  height: 20
-                ),
+                const SizedBox(height: 20),
                 Form(
                   key: signUpController.formKey,
                   child: Column(
@@ -133,17 +125,13 @@ class SignUpPage extends StatelessWidget {
                               signUpController.signUpFun();
                             },
                           )),
-                    const SizedBox(
-                      height: 25
-                    ),
+                    const SizedBox(height: 25),
                     const MyCustomText(
                       text: "Already Have An Account?",
                       fSize: 18,
                       fWeight: FontWeight.w600,
                     ),
-                    const SizedBox(
-                      height: 10
-                    ),
+                    const SizedBox(height: 10),
                     InkWell(
                       onTap: () {
                         Get.offAll(() => const LoginPage());
