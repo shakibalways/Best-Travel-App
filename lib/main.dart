@@ -1,4 +1,4 @@
-import 'package:best_travel_app/views/pages/auth/sign_up/sign_up.dart';
+
 import 'package:best_travel_app/views/pages/splash/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
