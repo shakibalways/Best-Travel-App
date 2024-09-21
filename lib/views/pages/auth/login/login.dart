@@ -26,7 +26,7 @@ class LoginPage extends StatelessWidget {
                 text: "Log In",
                 fSize: 40,
                 fWeight: FontWeight.bold,
-                color: Color(0xff191C32),
+                color: Color(0xff191C32)
               ),
               Form(
                 key: loginController.formKey,
