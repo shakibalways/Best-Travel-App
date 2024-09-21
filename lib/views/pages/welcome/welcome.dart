@@ -50,7 +50,7 @@ class WelcomePage extends StatelessWidget {
                       color: Colors.grey.shade300,
                       blurRadius: 2,
                       spreadRadius: 2,
-                    )
+                    ),
                   ],
                 ),
                 child: const Center(
