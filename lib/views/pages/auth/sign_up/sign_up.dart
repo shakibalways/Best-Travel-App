@@ -44,7 +44,7 @@ class SignUpPage extends StatelessWidget {
                           tColor: Color(0xffD44638),
                         ),
                         SizedBox(
-                          width: 10,
+                          width: 10
                         ),
                         DoubleContainer(
                           containerColor: Color(0xffAEC5F3),
