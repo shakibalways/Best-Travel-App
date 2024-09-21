@@ -134,7 +134,7 @@ class SignUpPage extends StatelessWidget {
                             },
                           )),
                     const SizedBox(
-                      height: 25,
+                      height: 25
                     ),
                     const MyCustomText(
                       text: "Already Have An Account?",
@@ -142,7 +142,7 @@ class SignUpPage extends StatelessWidget {
                       fWeight: FontWeight.w600,
                     ),
                     const SizedBox(
-                      height: 10,
+                      height: 10
                     ),
                     InkWell(
                       onTap: () {
