@@ -7,7 +7,7 @@ class SplashController extends GetxController {
   getSplashNavigate() {
     Timer(
       const Duration(
-        seconds: 3,
+        seconds: 3
       ),
       () => Get.offAll(
         () => const WelcomePage(),
