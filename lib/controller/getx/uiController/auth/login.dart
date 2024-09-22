@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class LoginController extends GetxController {
-
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
@@ -16,8 +15,7 @@ class LoginController extends GetxController {
       email: emailController.text,
       password: passwordController.text,
     );
-    if (status) {
-    }
+    if (status) {}
     isLoading.value = false;
   }
 
@@ -38,5 +36,4 @@ class LoginController extends GetxController {
     passwordController.dispose();
     super.dispose();
   }
-
 }
