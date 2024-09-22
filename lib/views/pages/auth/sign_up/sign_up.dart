@@ -107,25 +107,27 @@ class SignUpPage extends StatelessWidget {
                 const SizedBox(height: 50),
                 Column(
                   children: [
-                    Obx(() => signUpController.isLoading.isTrue
-                        ? const Center(
-                            child: CircularProgressIndicator(
-                              backgroundColor: Colors.red,
+                    Obx(
+                      () => signUpController.isLoading.isTrue
+                          ? const Center(
+                              child: CircularProgressIndicator(
+                                backgroundColor: Colors.red,
+                              ),
+                            )
+                          : MyCustomButton(
+                              buttonName: "Register",
+                              fSize: 18,
+                              color: Colors.white,
+                              fWieght: FontWeight.w500,
+                              onTap: () {
+                                if (!signUpController.formKey.currentState!
+                                    .validate()) {
+                                  return;
+                                }
+                                signUpController.signUpFun();
+                              },
                             ),
-                          )
-                        : MyCustomButton(
-                            buttonName: "Register",
-                            fSize: 18,
-                            color: Colors.white,
-                            fWieght: FontWeight.w500,
-                            onTap: () {
-                              if (!signUpController.formKey.currentState!
-                                  .validate()) {
-                                return;
-                              }
-                              signUpController.signUpFun();
-                            },
-                          ),),
+                    ),
                     const SizedBox(height: 25),
                     const MyCustomText(
                       text: "Already Have An Account?",
