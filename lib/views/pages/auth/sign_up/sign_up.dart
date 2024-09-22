@@ -125,7 +125,7 @@ class SignUpPage extends StatelessWidget {
                               }
                               signUpController.signUpFun();
                             },
-                          )),
+                          ),),
                     const SizedBox(height: 25),
                     const MyCustomText(
                       text: "Already Have An Account?",
