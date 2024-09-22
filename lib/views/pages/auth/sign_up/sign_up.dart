@@ -92,12 +92,13 @@ class SignUpPage extends StatelessWidget {
                           obscureText:
                               signUpController.isConfirmVisibility.value,
                           suffixIcon: GestureDetector(
-                              onTap: () {
-                                signUpController.toggleConfirmVisibility();
-                              },
-                              child: signUpController.isConfirmVisibility.value
-                                  ? const Icon(Icons.visibility)
-                                  : const Icon(Icons.visibility_off),),
+                            onTap: () {
+                              signUpController.toggleConfirmVisibility();
+                            },
+                            child: signUpController.isConfirmVisibility.value
+                                ? const Icon(Icons.visibility)
+                                : const Icon(Icons.visibility_off),
+                          ),
                         ),
                       )
                     ],
