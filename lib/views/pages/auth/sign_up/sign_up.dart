@@ -146,7 +146,7 @@ class SignUpPage extends StatelessWidget {
                         lSpacing: 1.5,
                         color: Color(0xff1BBA85),
                       ),
-                    )
+                    ),
                   ],
                 )
               ],
