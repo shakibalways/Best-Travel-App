@@ -137,7 +137,7 @@ class SignUpPage extends StatelessWidget {
                     const SizedBox(height: 10),
                     InkWell(
                       onTap: () {
-                        Get.offAll(() => const LoginPage());
+                        Get.offAll(() => const LoginPage(),);
                       },
                       child: const MyCustomText(
                         text: "LOGIN",
