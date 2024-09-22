@@ -96,9 +96,7 @@ class SignUpPage extends StatelessWidget {
                               signUpController.toggleConfirmVisibility();
                             },
                             child: signUpController.isConfirmVisibility.value
-                                ? const Icon(
-                                    Icons.visibility
-                                  )
+                                ? const Icon(Icons.visibility)
                                 : const Icon(Icons.visibility_off),
                           ),
                         ),
