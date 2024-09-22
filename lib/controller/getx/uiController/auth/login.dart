@@ -38,4 +38,5 @@ class LoginController extends GetxController {
     passwordController.dispose();
     super.dispose();
   }
+
 }
