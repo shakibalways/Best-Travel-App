@@ -99,9 +99,7 @@ class SignUpPage extends StatelessWidget {
                                 ? const Icon(
                                     Icons.visibility,
                                   )
-                                : const Icon(
-                                    Icons.visibility_off
-                                  ),
+                                : const Icon(Icons.visibility_off),
                           ),
                         ),
                       )
