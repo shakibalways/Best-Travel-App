@@ -9,7 +9,7 @@ class ForgetPasswordPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final otpController = Get.put(OtpController());
+
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(
@@ -20,27 +20,37 @@ class ForgetPasswordPage extends StatelessWidget {
         ),
         child: Column(
           children: [
-            const Column(
+            Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                MyCustomText(
+                const MyCustomText(
                   text: "Forget Password",
                   fWeight: FontWeight.bold,
                   fSize: 25,
                 ),
-                SizedBox(height: 10),
-                MyCustomText(
+                const SizedBox(height: 10),
+                RichText(
+                    text: const TextSpan(children: [
+                  TextSpan(text: "Please enter your"),
+                  TextSpan(text: 'Email Address/',style: TextStyle(
+                    fontWeight: FontWeight.w600,fontSize: 18
+                  )),
+                  TextSpan(text: "Phone Number"),
+                  TextSpan(
+                    text: "To reset your password",
+                  )
+                ])),
+                const MyCustomText(
                   maxLines: 2,
                   fSize: 18,
                   fWeight: FontWeight.w600,
                   color: Colors.grey,
-                  text:
-                      "Please enter your email adress /phone number to reset your password",
+                  text: "  ",
                 ),
               ],
             ),
             const SizedBox(height: 30),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [],
             ),
