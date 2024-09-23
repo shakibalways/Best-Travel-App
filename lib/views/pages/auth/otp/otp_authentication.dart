@@ -54,7 +54,7 @@ class OtpAuthenticationPage extends StatelessWidget {
             const Spacer(),
              MyCustomButton(
               onTap: (){
-                Get.to(()=>HomePage());
+                Get.to(()=>const HomePage());
               },
               buttonName: 'Verify',
               color: Colors.white,
