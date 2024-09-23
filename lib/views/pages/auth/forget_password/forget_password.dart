@@ -84,7 +84,7 @@ class ForgetPasswordPage extends StatelessWidget {
               Form(
                 key: controller.formKey,
                 child: MyForgetPasswordField(
-                  emailController: controller.forgetPassController,
+                  forgetPassController: controller.forgetPassController,
                 ),
               ),
               const SizedBox(

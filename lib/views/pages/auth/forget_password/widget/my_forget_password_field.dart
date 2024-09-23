@@ -4,14 +4,14 @@ import 'package:get/get.dart';
 class MyForgetPasswordField extends StatelessWidget {
   const MyForgetPasswordField({
     super.key,
-    required this.emailController,
+    required this.forgetPassController,
   });
-  final TextEditingController emailController;
+  final TextEditingController forgetPassController;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      controller: emailController,
+      controller: forgetPassController,
       decoration: InputDecoration(
         hintText: "Email",
         prefixIcon: const Icon(Icons.email_outlined),
