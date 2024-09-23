@@ -45,29 +45,30 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                   const SizedBox(height: 10),
                   RichText(
                     text: const TextSpan(
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.black,
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(text: "Please enter your"),
+                        TextSpan(
+                          text: ' Email Address / ',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 22,
+                              color: Colors.black),
                         ),
-                        children: [
-                          TextSpan(text: "Please enter your"),
-                          TextSpan(
-                            text: ' Email Address / ',
+                        TextSpan(
+                            text: "Phone Number",
                             style: TextStyle(
                                 fontWeight: FontWeight.w600,
                                 fontSize: 22,
-                                color: Colors.black),
-                          ),
-                          TextSpan(
-                              text: "Phone Number",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 22,
-                                  color: Colors.black)),
-                          TextSpan(
-                            text: " To reset your password",
-                          )
-                        ]),
+                                color: Colors.black)),
+                        TextSpan(
+                          text: " To reset your password",
+                        )
+                      ],
+                    ),
                   ),
                   const MyCustomText(
                     maxLines: 2,
