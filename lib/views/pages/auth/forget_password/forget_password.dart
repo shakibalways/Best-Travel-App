@@ -92,6 +92,9 @@ class ForgetPasswordPage extends StatelessWidget {
               ),
               MyCustomButton(
                 onTap: () {
+                  if (!controller.formKey.currentState!.validate()) {
+                    return;
+                  }
                   Get.to(() => const OtpAuthenticationPage());
                 },
                 buttonName: 'Verify',

@@ -4,4 +4,10 @@ import 'package:get/get.dart';
 class ForgetPasswordController extends GetxController {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   final TextEditingController forgetPassController = TextEditingController();
+
+  @override
+  void onInit() {
+    forgetPassController.text = "shakib@gmail.com";
+    super.onInit();
+  }
 }
