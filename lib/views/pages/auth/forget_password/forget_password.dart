@@ -22,7 +22,7 @@ class ForgetPasswordPage extends StatelessWidget {
             children: [
               IconButton(
                 onPressed: () {
-                  Get.to(()=>LoginPage());
+                  Get.to(()=>const LoginPage());
                 },
                 icon: const Icon(
                   Icons.arrow_back,
