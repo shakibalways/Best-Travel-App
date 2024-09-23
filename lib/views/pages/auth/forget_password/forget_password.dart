@@ -2,13 +2,11 @@ import 'package:best_travel_app/components/my_custom_button.dart';
 import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:flutter/material.dart';
 
-
 class ForgetPasswordPage extends StatelessWidget {
   const ForgetPasswordPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(
@@ -29,16 +27,26 @@ class ForgetPasswordPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 RichText(
-                    text: const TextSpan(children: [
-                  TextSpan(text: "Please enter your"),
-                  TextSpan(text: 'Email Address/',style: TextStyle(
-                    fontWeight: FontWeight.w600,fontSize: 18
-                  )),
-                  TextSpan(text: "Phone Number"),
-                  TextSpan(
-                    text: "To reset your password",
-                  )
-                ])),
+                    text: const TextSpan(
+                        style: TextStyle(fontSize: 18, color: Colors.black),
+                        children: [
+                      TextSpan(text: "Please enter your"),
+                      TextSpan(
+                          text: 'Email Address/',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 18,
+                              color: Colors.black)),
+                      TextSpan(
+                          text: "Phone Number",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 18,
+                              color: Colors.black)),
+                      TextSpan(
+                        text: "To reset your password",
+                      )
+                    ])),
                 const MyCustomText(
                   maxLines: 2,
                   fSize: 18,
