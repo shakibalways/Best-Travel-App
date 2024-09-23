@@ -1,6 +1,7 @@
 import 'package:best_travel_app/components/my_custom_button.dart';
 import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:best_travel_app/views/pages/auth/forget_password/widget/my_forget_password_field.dart';
+import 'package:best_travel_app/views/pages/auth/otp/otp_authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -84,7 +85,10 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
               const SizedBox(
                 height: 50,
               ),
-              const MyCustomButton(
+               MyCustomButton(
+                onTap: (){
+                  Get.to(()=>OtpAuthenticationPage());
+                },
                 buttonName: 'Verify',
                 color: Colors.white,
                 fWieght: FontWeight.w700,
