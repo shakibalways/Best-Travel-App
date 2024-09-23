@@ -2,6 +2,7 @@ import 'package:best_travel_app/components/my_custom_button.dart';
 import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:best_travel_app/views/pages/auth/forget_password/widget/my_forget_password_field.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ForgetPasswordPage extends StatefulWidget {
   const ForgetPasswordPage({super.key});
@@ -22,7 +23,9 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.back();
+                  },
                   icon: const Icon(
                     Icons.arrow_back,
                     size: 40,
