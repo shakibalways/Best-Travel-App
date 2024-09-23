@@ -27,7 +27,7 @@ class ForgetPasswordPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 RichText(
-                    text: const TextSpan(
+                    text:  const TextSpan(
                         style: TextStyle(fontSize: 18, color: Colors.black),
                         children: [
                       TextSpan(text: "Please enter your"),
