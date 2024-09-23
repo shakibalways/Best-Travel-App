@@ -22,7 +22,7 @@ class ForgetPasswordPage extends StatelessWidget {
             children: [
               IconButton(
                 onPressed: () {
-                  Get.to(()=>const LoginPage());
+                  Get.to(() => const LoginPage());
                 },
                 icon: const Icon(
                   Icons.arrow_back,
@@ -81,8 +81,11 @@ class ForgetPasswordPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 30),
-              MyForgetPasswordField(
-                emailController: controller.forgetPassController,
+              Form(
+                key: controller.formKey,
+                child: MyForgetPasswordField(
+                  emailController: controller.forgetPassController,
+                ),
               ),
               const SizedBox(
                 height: 50,

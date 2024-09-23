@@ -11,11 +11,10 @@ class LoginController extends GetxController {
 
   signUpFun() async {
     isLoading.value = true;
-    bool status = await LoginService.loginService(
+    await LoginService.loginService(
       email: emailController.text,
       password: passwordController.text,
     );
-    if (status) {}
     isLoading.value = false;
   }
 
