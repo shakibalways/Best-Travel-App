@@ -29,28 +29,28 @@ class ForgetPasswordPage extends StatelessWidget {
                 RichText(
                     text: const TextSpan(
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 20,
                           color: Colors.black,
                         ),
                         children: [
                       TextSpan(text: "Please enter your"),
                       TextSpan(
-                        text: ' Email Address /',
+                        text: ' Email Address / ',
                         style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 18,
+                            fontSize: 22,
                             color: Colors.black),
                       ),
                       TextSpan(
                           text: "Phone Number",
                           style: TextStyle(
                               fontWeight: FontWeight.w600,
-                              fontSize: 18,
+                              fontSize: 22,
                               color: Colors.black)),
                       TextSpan(
                         text: " To reset your password",
                       )
-                    ])),
+                    ]),),
                 const MyCustomText(
                   maxLines: 2,
                   fSize: 18,
