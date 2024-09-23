@@ -27,7 +27,10 @@ class WelcomePage extends StatelessWidget {
                     letterSpacing: 3,
                   ),
                 ),
-                Image.asset("assets/vector/bottom.png"),
+                Padding(
+                  padding: const EdgeInsets.only(left: 50),
+                  child: Image.asset("assets/vector/bottom.png"),
+                ),
               ],
             ),
           ),

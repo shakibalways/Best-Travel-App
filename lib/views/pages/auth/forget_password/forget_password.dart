@@ -2,6 +2,7 @@ import 'package:best_travel_app/components/my_custom_button.dart';
 import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:best_travel_app/controller/getx/uiController/auth/forget_password.dart';
 import 'package:best_travel_app/views/pages/auth/forget_password/widget/my_forget_password_field.dart';
+import 'package:best_travel_app/views/pages/auth/login/login.dart';
 import 'package:best_travel_app/views/pages/auth/otp/otp_authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -21,7 +22,7 @@ class ForgetPasswordPage extends StatelessWidget {
             children: [
               IconButton(
                 onPressed: () {
-                  Get.to(()=>const ForgetPasswordPage());
+                  Get.to(()=>LoginPage());
                 },
                 icon: const Icon(
                   Icons.arrow_back,
@@ -37,7 +38,7 @@ class ForgetPasswordPage extends StatelessWidget {
                   const MyCustomText(
                     text: "Forget Password",
                     fWeight: FontWeight.bold,
-                    fSize: 25,
+                    fSize: 30,
                   ),
                   const SizedBox(height: 10),
                   RichText(
