@@ -20,7 +20,9 @@ class ForgetPasswordPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(()=>ForgetPasswordPage());
+                },
                 icon: const Icon(
                   Icons.arrow_back,
                   size: 40,
