@@ -32,11 +32,12 @@ class ForgetPasswordPage extends StatelessWidget {
                         children: [
                       TextSpan(text: "Please enter your"),
                       TextSpan(
-                          text: 'Email Address/',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 18,
-                              color: Colors.black),),
+                        text: 'Email Address/',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 18,
+                            color: Colors.black),
+                      ),
                       TextSpan(
                           text: "Phone Number",
                           style: TextStyle(
