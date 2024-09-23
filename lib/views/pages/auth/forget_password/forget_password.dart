@@ -1,8 +1,8 @@
 import 'package:best_travel_app/components/my_custom_button.dart';
 import 'package:best_travel_app/components/my_custom_text.dart';
-import 'package:best_travel_app/controller/getx/uiController/auth/otp.dart';
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 
 class ForgetPasswordPage extends StatelessWidget {
   const ForgetPasswordPage({super.key});
