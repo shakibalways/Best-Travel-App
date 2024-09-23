@@ -1,6 +1,7 @@
 import 'package:best_travel_app/components/my_custom_button.dart';
 import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:best_travel_app/controller/getx/uiController/auth/login.dart';
+import 'package:best_travel_app/views/pages/auth/forget_password/forget_password.dart';
 import 'package:best_travel_app/views/pages/auth/login/widget/my_email_text_field.dart';
 import 'package:best_travel_app/views/pages/auth/login/widget/my_password_text_field.dart';
 import 'package:best_travel_app/views/pages/auth/sign_up/sign_up.dart';
@@ -51,8 +52,11 @@ class LoginPage extends StatelessWidget {
                         obscureText: loginController.isVisibility.value,
                       ),
                     ),
-                    const InkWell(
-                      child: MyCustomText(
+                     InkWell(
+                      onTap: (){
+                        Get.offAll(()=>const ForgetPasswordPage());
+                      },
+                      child: const MyCustomText(
                         text: "Forget Password?",
                         color: Color(0xff1BBA85),
                         fSize: 18,
