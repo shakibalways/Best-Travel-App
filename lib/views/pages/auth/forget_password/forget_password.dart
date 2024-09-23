@@ -1,21 +1,17 @@
 import 'package:best_travel_app/components/my_custom_button.dart';
 import 'package:best_travel_app/components/my_custom_text.dart';
+import 'package:best_travel_app/controller/getx/uiController/auth/forget_password.dart';
 import 'package:best_travel_app/views/pages/auth/forget_password/widget/my_forget_password_field.dart';
 import 'package:best_travel_app/views/pages/auth/otp/otp_authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class ForgetPasswordPage extends StatefulWidget {
+class ForgetPasswordPage extends StatelessWidget {
   const ForgetPasswordPage({super.key});
 
   @override
-  State<ForgetPasswordPage> createState() => _ForgetPasswordPageState();
-}
-
-class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
-  final TextEditingController forgetPassController = TextEditingController();
-  @override
   Widget build(BuildContext context) {
+    final controller = Get.put(ForgetPasswordController());
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -82,7 +78,9 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                 ],
               ),
               const SizedBox(height: 30),
-              MyForgetPasswordField(emailController: forgetPassController),
+              MyForgetPasswordField(
+                emailController: controller.forgetPassController,
+              ),
               const SizedBox(
                 height: 50,
               ),
