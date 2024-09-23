@@ -24,9 +24,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               IconButton(
-                onPressed: () {
-                  Get.back();
-                },
+                onPressed: () {},
                 icon: const Icon(
                   Icons.arrow_back,
                   size: 40,
@@ -55,9 +53,10 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                         TextSpan(
                           text: ' Email Address / ',
                           style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 22,
-                              color: Colors.black),
+                            fontWeight: FontWeight.w600,
+                            fontSize: 22,
+                            color: Colors.black,
+                          ),
                         ),
                         TextSpan(
                             text: "Phone Number",
@@ -85,9 +84,9 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
               const SizedBox(
                 height: 50,
               ),
-               MyCustomButton(
-                onTap: (){
-                  Get.to(()=>const OtpAuthenticationPage());
+              MyCustomButton(
+                onTap: () {
+                  Get.to(() => const OtpAuthenticationPage());
                 },
                 buttonName: 'Verify',
                 color: Colors.white,
