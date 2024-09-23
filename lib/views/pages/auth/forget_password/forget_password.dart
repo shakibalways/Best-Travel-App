@@ -48,7 +48,7 @@ class ForgetPasswordPage extends StatelessWidget {
                               fontSize: 18,
                               color: Colors.black)),
                       TextSpan(
-                        text: "To reset your password",
+                        text: " To reset your password",
                       )
                     ])),
                 const MyCustomText(
