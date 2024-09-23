@@ -63,7 +63,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                             style: TextStyle(
                                 fontWeight: FontWeight.w600,
                                 fontSize: 22,
-                                color: Colors.black)),
+                                color: Colors.black),),
                         TextSpan(
                           text: " To reset your password",
                         )
