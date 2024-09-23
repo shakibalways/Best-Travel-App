@@ -23,13 +23,14 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               IconButton(
-                  onPressed: () {
-                    Get.back();
-                  },
-                  icon: const Icon(
-                    Icons.arrow_back,
-                    size: 40,
-                  )),
+                onPressed: () {
+                  Get.back();
+                },
+                icon: const Icon(
+                  Icons.arrow_back,
+                  size: 40,
+                ),
+              ),
               const SizedBox(
                 height: 50,
               ),
