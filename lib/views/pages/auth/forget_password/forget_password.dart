@@ -87,7 +87,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
               ),
                MyCustomButton(
                 onTap: (){
-                  Get.to(()=>OtpAuthenticationPage());
+                  Get.to(()=>const OtpAuthenticationPage());
                 },
                 buttonName: 'Verify',
                 color: Colors.white,
