@@ -1,4 +1,3 @@
-import 'package:best_travel_app/views/pages/auth/forget_password/forget_password.dart';
 import 'package:best_travel_app/views/pages/splash/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
