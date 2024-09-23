@@ -36,7 +36,7 @@ class ForgetPasswordPage extends StatelessWidget {
                           style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: 18,
-                              color: Colors.black)),
+                              color: Colors.black),),
                       TextSpan(
                           text: "Phone Number",
                           style: TextStyle(
