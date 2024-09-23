@@ -2,6 +2,7 @@ import 'package:best_travel_app/components/my_custom_button.dart';
 import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:best_travel_app/controller/getx/uiController/auth/otp.dart';
 import 'package:best_travel_app/views/pages/auth/otp/widgets/my_custom_otp_auth.dart';
+import 'package:best_travel_app/views/pages/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -51,7 +52,10 @@ class OtpAuthenticationPage extends StatelessWidget {
               ],
             ),
             const Spacer(),
-            const MyCustomButton(
+             MyCustomButton(
+              onTap: (){
+                Get.to(()=>HomePage());
+              },
               buttonName: 'Verify',
               color: Colors.white,
               fWieght: FontWeight.w700,
