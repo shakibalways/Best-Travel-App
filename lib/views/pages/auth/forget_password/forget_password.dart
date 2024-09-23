@@ -28,7 +28,10 @@ class ForgetPasswordPage extends StatelessWidget {
                 const SizedBox(height: 10),
                 RichText(
                     text: const TextSpan(
-                        style: TextStyle(fontSize: 18, color: Colors.black),
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),
                         children: [
                       TextSpan(text: "Please enter your"),
                       TextSpan(
@@ -39,7 +42,7 @@ class ForgetPasswordPage extends StatelessWidget {
                             color: Colors.black),
                       ),
                       TextSpan(
-                          text: "\nPhone Number",
+                          text: "Phone Number",
                           style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: 18,
