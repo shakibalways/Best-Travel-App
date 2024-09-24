@@ -16,23 +16,29 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Image.asset("assets/icon/menu.png"),
-                Image.asset("assets/icon/notification.png"),
-              ],
-            ),
-            SizedBox(height: 30,),
-            MyCustomText(
-              maxLines: 2,
-              text: "Where Do You \nWant Go",fSize: 28,fWeight: FontWeight.w400,
-            ),
-            MyCustomSearchField(controller: controller,icon: Icons.search,),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(left: 20,right: 20,top: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Image.asset("assets/icon/menu.png"),
+                  Image.asset("assets/icon/notification.png"),
+                ],
+              ),
+              const SizedBox(height: 30,),
+              const MyCustomText(
+                maxLines: 2,
+                text: "Where Do You \nWant Go",fSize: 28,fWeight: FontWeight.w400,
+              ),
+              const SizedBox(height: 20,),
+              MyCustomSearchField(
+                hText: "Search Your Trip",
+                controller: controller,icon: Icons.search,),
+            ],
+          ),
         ),
       ),
     );

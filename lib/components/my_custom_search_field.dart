@@ -28,10 +28,10 @@ class MyCustomSearchField extends StatelessWidget {
     final height = MediaQuery.sizeOf(context).height;
     final width = MediaQuery.sizeOf(context).width;
     return Container(
-      height: height * 0.08,
+      height: height * 0.07,
       width: width,
       decoration: BoxDecoration(
-        color: Colors.grey.shade300,
+        color: Colors.grey.shade200,
         borderRadius: BorderRadius.circular(25),
       ),
       child: Row(
@@ -58,7 +58,7 @@ class MyCustomSearchField extends StatelessWidget {
               child: Center(
                 child: Icon(
                   icon,
-                  size: 35,
+                  size: 25,
                   color: Colors.white,
                 ),
               ),
