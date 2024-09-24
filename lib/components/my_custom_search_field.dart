@@ -54,8 +54,9 @@ class MyCustomSearchField extends StatelessWidget {
               height: height * 0.07,
               width: width * 0.15,
               margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-              decoration:
-                  BoxDecoration(borderRadius: BorderRadius.circular(15)),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+              ),
               child: Center(
                 child: Icon(
                   icon,
