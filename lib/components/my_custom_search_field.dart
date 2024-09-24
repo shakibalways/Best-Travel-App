@@ -30,9 +30,9 @@ class MyCustomSearchField extends StatelessWidget {
     return Container(
       height: height * 0.08,
       width: width,
-      margin: margin ?? const EdgeInsets.symmetric(horizontal: 15),
+      // margin: margin ?? const EdgeInsets.symmetric(horizontal: 15),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.grey.shade300,
         borderRadius: BorderRadius.circular(15),
       ),
       child: Row(
