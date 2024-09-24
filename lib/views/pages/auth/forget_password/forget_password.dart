@@ -3,7 +3,6 @@ import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:best_travel_app/controller/getx/uiController/auth/forget_password.dart';
 import 'package:best_travel_app/views/pages/auth/forget_password/widget/my_forget_password_field.dart';
 import 'package:best_travel_app/views/pages/auth/login/login.dart';
-import 'package:best_travel_app/views/pages/auth/otp/otp_authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -95,7 +94,7 @@ class ForgetPasswordPage extends StatelessWidget {
                   if (!controller.formKey.currentState!.validate()) {
                     return;
                   }
-                  Get.to(() => const OtpAuthenticationPage());
+                  controller.forgetPassFun();
                 },
                 buttonName: 'Verify',
                 color: Colors.white,

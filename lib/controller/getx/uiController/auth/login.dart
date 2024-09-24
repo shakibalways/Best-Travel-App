@@ -1,4 +1,5 @@
 import 'package:best_travel_app/controller/api/auth/login.dart';
+import 'package:best_travel_app/views/pages/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,10 +12,13 @@ class LoginController extends GetxController {
 
   signUpFun() async {
     isLoading.value = true;
-    await LoginService.loginService(
+    bool status = await LoginService.loginService(
       email: emailController.text,
       password: passwordController.text,
     );
+    if (status) {
+      Get.to(() => const HomePage());
+    }
     isLoading.value = false;
   }
 
