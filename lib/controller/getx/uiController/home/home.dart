@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 class HomeController extends GetxController with GetSingleTickerProviderStateMixin {
   late TabController tabController;
 
-
   @override
   void onInit() {
     super.onInit();
