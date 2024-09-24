@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
               maxLines: 2,
               text: "Where Do You \nWant Go",fSize: 28,fWeight: FontWeight.w400,
             ),
-            MyCustomSearchField(controller: controller,),
+            MyCustomSearchField(controller: controller,icon: Icons.search,),
           ],
         ),
       ),
