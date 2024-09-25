@@ -1,4 +1,3 @@
-
 import 'package:best_travel_app/components/my_custom_search_field.dart';
 import 'package:best_travel_app/components/my_custom_text.dart';
 import 'package:best_travel_app/controller/getx/uiController/home/home.dart';
@@ -44,9 +43,7 @@ class HomePage extends StatelessWidget {
                 controller: homeController.searchController,
                 icon: Icons.search,
               ),
-              const SizedBox(
-                height: 30
-              ),
+              const SizedBox(height: 30),
               Container(
                 color: Colors.white,
                 child: MyTabBar(
@@ -67,7 +64,7 @@ class HomePage extends StatelessWidget {
                           return Container(
                             height: 250,
                             width: 200,
-                            margin: const EdgeInsets.only(right: 10,top: 10),
+                            margin: const EdgeInsets.only(right: 10, top: 10),
                             decoration: BoxDecoration(
                               color: Colors.deepPurple,
                               borderRadius: BorderRadius.circular(15),
@@ -81,7 +78,7 @@ class HomePage extends StatelessWidget {
                           return Container(
                             height: 250,
                             width: 200,
-                            margin: const EdgeInsets.only(right: 10,top: 10),
+                            margin: const EdgeInsets.only(right: 10, top: 10),
                             decoration: BoxDecoration(
                               color: Colors.deepPurple[100],
                               borderRadius: BorderRadius.circular(15),
@@ -95,7 +92,7 @@ class HomePage extends StatelessWidget {
                           return Container(
                             height: 250,
                             width: 200,
-                            margin: const EdgeInsets.only(right: 10,top: 10),
+                            margin: const EdgeInsets.only(right: 10, top: 10),
                             decoration: BoxDecoration(
                               color: Colors.orange,
                               borderRadius: BorderRadius.circular(15),
@@ -109,7 +106,7 @@ class HomePage extends StatelessWidget {
                           return Container(
                             height: 250,
                             width: 200,
-                            margin: const EdgeInsets.only(right: 10,top: 10),
+                            margin: const EdgeInsets.only(right: 10, top: 10),
                             decoration: BoxDecoration(
                               color: Colors.pink,
                               borderRadius: BorderRadius.circular(15),
@@ -123,14 +120,13 @@ class HomePage extends StatelessWidget {
                           return Container(
                             height: 250,
                             width: 200,
-                            margin: const EdgeInsets.only(right: 10,top: 10),
+                            margin: const EdgeInsets.only(right: 10, top: 10),
                             decoration: BoxDecoration(
                               color: Colors.yellow,
                               borderRadius: BorderRadius.circular(15),
                             ),
                           );
                         }),
-
                   ],
                 ),
               )
