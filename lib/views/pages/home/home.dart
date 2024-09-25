@@ -100,7 +100,7 @@ class HomePage extends StatelessWidget {
                               borderRadius: BorderRadius.circular(15),
                             ),
                           );
-                        }),
+                        },),
                     ListView.builder(
                         itemCount: 3,
                         scrollDirection: Axis.horizontal,
