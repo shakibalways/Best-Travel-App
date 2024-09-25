@@ -118,19 +118,20 @@ class HomePage extends StatelessWidget {
                       },
                     ),
                     ListView.builder(
-                        itemCount: 3,
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            height: 250,
-                            width: 200,
-                            margin: const EdgeInsets.only(right: 10, top: 10),
-                            decoration: BoxDecoration(
-                              color: Colors.yellow,
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                          );
-                        }),
+                      itemCount: 3,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: 250,
+                          width: 200,
+                          margin: const EdgeInsets.only(right: 10, top: 10),
+                          decoration: BoxDecoration(
+                            color: Colors.yellow,
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                        );
+                      },
+                    ),
                   ],
                 ),
               )
