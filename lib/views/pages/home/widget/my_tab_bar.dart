@@ -9,21 +9,26 @@ class MyTabBar extends StatelessWidget {
     return TabBar(
       isScrollable: true,
       tabAlignment: TabAlignment.start,
-      indicatorColor: Colors.deepPurpleAccent,
+      labelColor: Color(0xff1BBA85),
+      indicatorColor: const Color(0xff1BBA85),
       unselectedLabelColor: Colors.grey,
+      dividerColor: Colors.transparent,
       controller: tabController,
       tabs: const [
         Tab(
-          child: Text("View All"),
+          child: Text("All",),
         ),
         Tab(
-          child: Text("HeadPhone"),
+          child: Text("America",),
         ),
         Tab(
-          child: Text("Beosound"),
+          child: Text("Europe",),
         ),
         Tab(
-          child: Text("Beoplay"),
+          child: Text("Asia",),
+        ),
+        Tab(
+          child: Text("Oceania",),
         ),
       ],
     );
