@@ -35,9 +35,7 @@ class HomePage extends StatelessWidget {
                 fSize: 28,
                 fWeight: FontWeight.w400,
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
               MyCustomSearchField(
                 hText: "Search Your Trip",
                 controller: homeController.searchController,
