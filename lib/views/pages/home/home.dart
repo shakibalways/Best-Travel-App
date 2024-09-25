@@ -26,9 +26,7 @@ class HomePage extends StatelessWidget {
                   Image.asset("assets/icon/notification.png"),
                 ],
               ),
-              const SizedBox(
-                height: 30,
-              ),
+              const SizedBox(height: 30),
               const MyCustomText(
                 maxLines: 2,
                 text: "Where Do You \nWant Go",
