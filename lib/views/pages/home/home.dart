@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget {
                 icon: Icons.search,
               ),
               const SizedBox(
-                height: 30,
+                height: 30
               ),
               Container(
                 color: Colors.white,
