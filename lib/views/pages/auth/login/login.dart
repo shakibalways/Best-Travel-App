@@ -92,9 +92,7 @@ class LoginPage extends StatelessWidget {
                     fSize: 18,
                     fWeight: FontWeight.w600,
                   ),
-                  const SizedBox(
-                    height: 10
-                  ),
+                  const SizedBox(height: 10),
                   InkWell(
                     onTap: () {
                       Get.offAll(() => const SignUpPage());
