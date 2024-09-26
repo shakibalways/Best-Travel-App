@@ -93,7 +93,7 @@ class LoginPage extends StatelessWidget {
                     fWeight: FontWeight.w600,
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 10
                   ),
                   InkWell(
                     onTap: () {
