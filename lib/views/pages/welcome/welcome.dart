@@ -2,6 +2,7 @@ import 'package:best_travel_app/views/pages/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
 
