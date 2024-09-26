@@ -84,9 +84,7 @@ class ForgetPasswordPage extends StatelessWidget {
                   forgetPassController: controller.forgetPassController,
                 ),
               ),
-              const SizedBox(
-                height: 50
-              ),
+              const SizedBox(height: 50),
               MyCustomButton(
                 onTap: () {
                   if (!controller.formKey.currentState!.validate()) {
