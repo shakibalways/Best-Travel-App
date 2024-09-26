@@ -37,7 +37,7 @@ class LoginPage extends StatelessWidget {
                     MyEmailTextField(
                         emailController: loginController.emailController),
                     const SizedBox(
-                      height: 25,
+                      height: 25
                     ),
                     Obx(
                       () => MyPasswordTextField(
