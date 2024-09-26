@@ -24,11 +24,10 @@ class LoginPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               const MyCustomText(
-                text: "Log In",
-                fSize: 40,
-                fWeight: FontWeight.bold,
-                color: Color(0xff191C32)
-              ),
+                  text: "Log In",
+                  fSize: 40,
+                  fWeight: FontWeight.bold,
+                  color: Color(0xff191C32)),
               Form(
                 key: loginController.formKey,
                 child: Column(
@@ -36,9 +35,7 @@ class LoginPage extends StatelessWidget {
                   children: [
                     MyEmailTextField(
                         emailController: loginController.emailController),
-                    const SizedBox(
-                      height: 25
-                    ),
+                    const SizedBox(height: 25),
                     Obx(
                       () => MyPasswordTextField(
                         suffixWidget: GestureDetector(
@@ -52,9 +49,9 @@ class LoginPage extends StatelessWidget {
                         obscureText: loginController.isVisibility.value,
                       ),
                     ),
-                     InkWell(
-                      onTap: (){
-                        Get.offAll(()=>const ForgetPasswordPage());
+                    InkWell(
+                      onTap: () {
+                        Get.offAll(() => const ForgetPasswordPage());
                       },
                       child: const MyCustomText(
                         text: "Forget Password?",
