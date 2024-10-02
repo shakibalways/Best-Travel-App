@@ -13,7 +13,7 @@ class SplashPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset("assets/images/traveler.png"),
+            Image.asset("assets/images/splash/traveler.png"),
             const SizedBox(
               height: 5
             ),

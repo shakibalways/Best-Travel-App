@@ -9,7 +9,7 @@ class Onboarding2 extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Image.asset("assets/onboarding/destination.png"),
+        Image.asset("assets/images/onboarding/destination.png"),
         const SizedBox(
           height: 25
         ),
@@ -30,7 +30,7 @@ class Onboarding2 extends StatelessWidget {
                 "Select a place for your trip easily and know the exact cost of the tour.",
             color: Colors.grey,
           ),
-        )
+        ),
       ],
     );
   }

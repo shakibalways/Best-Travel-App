@@ -9,7 +9,7 @@ class Onboarding1 extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Image.asset("assets/onboarding/mountain.png"),
+        Image.asset("assets/images/onboarding/mountain.png"),
         const SizedBox(height: 25),
         const MyCustomText(
           text: "Explore Destinations",

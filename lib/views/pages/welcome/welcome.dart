@@ -18,7 +18,7 @@ class WelcomePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset("assets/vector/top.png"),
+                Image.asset("assets/images/vector/top.png"),
                 const Text(
                   "Welcome",
                   style: TextStyle(
@@ -29,7 +29,7 @@ class WelcomePage extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 50),
-                  child: Image.asset("assets/vector/bottom.png"),
+                  child: Image.asset("assets/images/vector/bottom.png"),
                 ),
               ],
             ),

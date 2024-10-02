@@ -24,8 +24,8 @@ class HomePage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.asset("assets/icon/menu.png"),
-                      Image.asset("assets/icon/notification.png"),
+                      Image.asset("assets/images/icon/menu.png"),
+                      Image.asset("assets/images/icon/notification.png"),
                     ],
                   ),
                   const SizedBox(height: 30),

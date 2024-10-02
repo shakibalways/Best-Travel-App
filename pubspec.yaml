@@ -37,10 +37,10 @@ flutter:
 
 
   assets:
-    - assets/images/
-    - assets/vector/
-    - assets/onboarding/
-    - assets/icon/
+    - assets/images/splash/
+    - assets/images/vector/
+    - assets/images/onboarding/
+    - assets/images/icon/
 
 
 
