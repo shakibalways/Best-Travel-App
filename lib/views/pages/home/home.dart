@@ -14,39 +14,46 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.only(left: 20, right: 20, top: 35),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 20, right: 20, top: 35),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image.asset("assets/icon/menu.png"),
-                  Image.asset("assets/icon/notification.png"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Image.asset("assets/icon/menu.png"),
+                      Image.asset("assets/icon/notification.png"),
+                    ],
+                  ),
+                  const SizedBox(height: 30),
+                  const MyCustomText(
+                    maxLines: 2,
+                    text: "Where Do You \nWant Go",
+                    fSize: 28,
+                    fWeight: FontWeight.w400,
+                  ),
+                  const SizedBox(height: 20),
+                  MyCustomSearchField(
+                    hText: "Search Your Trip",
+                    controller: homeController.searchController,
+                    icon: Icons.search,
+                  ),
+                  const SizedBox(height: 30),
                 ],
               ),
-              const SizedBox(height: 30),
-              const MyCustomText(
-                maxLines: 2,
-                text: "Where Do You \nWant Go",
-                fSize: 28,
-                fWeight: FontWeight.w400,
+            ),
+            Container(
+              color: Colors.white,
+              child: MyTabBar(
+                tabController: homeController.tabController,
               ),
-              const SizedBox(height: 20),
-              MyCustomSearchField(
-                hText: "Search Your Trip",
-                controller: homeController.searchController,
-                icon: Icons.search,
-              ),
-              const SizedBox(height: 30),
-              Container(
-                color: Colors.white,
-                child: MyTabBar(
-                  tabController: homeController.tabController,
-                ),
-              ),
-              Container(
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 30),
+              child: Container(
                 height: 300,
                 width: double.maxFinite,
                 color: Colors.white,
@@ -134,8 +141,8 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
