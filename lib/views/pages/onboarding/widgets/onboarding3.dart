@@ -10,7 +10,7 @@ class Onboarding3 extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset("assets/onboarding/travellings.png"),
-        const SizedBox(height: 25),
+        const SizedBox(height: 25,),
         const MyCustomText(
           text: "Fly to Destination",
           fSize: 28,
