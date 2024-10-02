@@ -105,7 +105,7 @@ class HomePage extends StatelessWidget {
                         return Container(
                           height: 250,
                           width: 200,
-                          margin: const EdgeInsets.only(right: 10, top: 10),
+                          margin: const EdgeInsets.only(right: 10, top: 10,),
                           decoration: BoxDecoration(
                             color: Colors.pink,
                             borderRadius: BorderRadius.circular(15),
