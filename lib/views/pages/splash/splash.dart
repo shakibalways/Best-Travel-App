@@ -2,7 +2,6 @@ import 'package:best_travel_app/controller/getx/uiController/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
   @override
