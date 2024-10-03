@@ -73,9 +73,10 @@ class HomePage extends StatelessWidget {
                               color: Colors.deepPurple,
                               borderRadius: BorderRadius.circular(15),
                               image: const DecorationImage(
-                                  fit: BoxFit.cover,
-                                  image: AssetImage(
-                                      "assets/images/tabBar/image 5.png"),)),
+                                fit: BoxFit.cover,
+                                image: AssetImage(
+                                    "assets/images/tabBar/image 5.png"),
+                              )),
                           child: const Column(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
@@ -83,8 +84,12 @@ class HomePage extends StatelessWidget {
                                 children: [
                                   Column(
                                     children: [
-                                      MyCustomText(text: "Bermuda, USA",fSize: 20,fWeight: FontWeight.w600,color: Colors.white,),
-
+                                      MyCustomText(
+                                        text: "Bermuda, USA",
+                                        fSize: 20,
+                                        fWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                      ),
                                       Text(" Starting at \$1000"),
                                     ],
                                   ),
