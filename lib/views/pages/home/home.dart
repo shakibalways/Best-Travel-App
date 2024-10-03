@@ -76,7 +76,7 @@ class HomePage extends StatelessWidget {
                                 fit: BoxFit.cover,
                                 image: AssetImage(
                                     "assets/images/tabBar/image 5.png"),
-                              )),
+                              ),),
                           child: const Column(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
