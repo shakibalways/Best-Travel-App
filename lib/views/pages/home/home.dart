@@ -54,9 +54,9 @@ class HomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 30),
               child: Container(
-                height: 300,
+                height: 320,
                 width: double.maxFinite,
-                color: Colors.white,
+                color: Colors.red,
                 child: TabBarView(
                   controller: homeController.tabController,
                   children: [
@@ -65,12 +65,36 @@ class HomePage extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          height: 250,
-                          width: 200,
-                          margin: const EdgeInsets.only(right: 10, top: 10),
+                          height: 270,
+                          width: 250,
+                          margin: const EdgeInsets.only(
+                              right: 10, top: 10, bottom: 10),
                           decoration: BoxDecoration(
-                            color: Colors.deepPurple,
-                            borderRadius: BorderRadius.circular(15),
+                              color: Colors.deepPurple,
+                              borderRadius: BorderRadius.circular(15),
+                              image: const DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage(
+                                      "assets/images/tabBar/image 5.png"),)),
+                          child: const Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      MyCustomText(text: "Bermuda, USA",fSize: 20,fWeight: FontWeight.w600,color: Colors.white,),
+
+                                      Text(" Starting at \$1000"),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.favorite,
+                                    color: Colors.white,
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
                         );
                       },
