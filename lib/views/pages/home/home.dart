@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
               child: Container(
                 height: 320,
                 width: double.maxFinite,
-                color: Colors.red,
+                color: Colors.transparent,
                 child: TabBarView(
                   controller: homeController.tabController,
                   children: [
