@@ -70,13 +70,14 @@ class HomePage extends StatelessWidget {
                           margin: const EdgeInsets.only(
                               right: 10, top: 10, bottom: 10),
                           decoration: BoxDecoration(
-                              color: Colors.deepPurple,
-                              borderRadius: BorderRadius.circular(15),
-                              image: const DecorationImage(
-                                fit: BoxFit.cover,
-                                image: AssetImage(
-                                    "assets/images/tabBar/image 5.png"),
-                              ),),
+                            color: Colors.deepPurple,
+                            borderRadius: BorderRadius.circular(15),
+                            image: const DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/images/tabBar/image 5.png"),
+                            ),
+                          ),
                           child: const Column(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
