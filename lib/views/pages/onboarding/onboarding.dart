@@ -58,7 +58,7 @@ class OnboardingPage extends StatelessWidget {
                           onTap: () {
                             controller.pageController.nextPage(
                               duration: const Duration(milliseconds: 400),
-                              curve: Curves.easeIn,
+                              curve: Curves.easeI
                             );
                           },
                         ),
