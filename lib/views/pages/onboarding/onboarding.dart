@@ -48,7 +48,9 @@ class OnboardingPage extends StatelessWidget {
                       ? MyCustomText(
                           text: "Done",
                           onTap: () {
-                            Get.to(() => const LoginPage(),);
+                            Get.to(
+                              () => const LoginPage(),
+                            );
                           },
                         )
                       : MyCustomText(
