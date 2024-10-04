@@ -54,12 +54,11 @@ class OnboardingPage extends StatelessWidget {
                           },
                         )
                       : MyCustomText(
-                    text: "Next",
+                          text: "Next",
                           onTap: () {
                             controller.pageController.nextPage(
-                              duration: const Duration(milliseconds: 400),
-                              curve: Curves.easeI
-                            );
+                                duration: const Duration(milliseconds: 400),
+                                curve: Curves.easeIn);
                           },
                         ),
                 ),
