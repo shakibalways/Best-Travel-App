@@ -47,6 +47,8 @@ class OnboardingPage extends StatelessWidget {
                   () => controller.onLastPage.value
                       ? MyCustomText(
                           text: "Done",
+                          fWeight: FontWeight.w700,
+                          color: Colors.blue,
                           onTap: () {
                             Get.to(
                               () => const LoginPage(),
