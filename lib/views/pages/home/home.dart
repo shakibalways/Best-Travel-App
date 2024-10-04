@@ -89,7 +89,8 @@ class HomePage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Column(
                                     children: [
@@ -99,7 +100,11 @@ class HomePage extends StatelessWidget {
                                         fWeight: FontWeight.w700,
                                         color: Colors.white,
                                       ),
-                                 MyCustomText(text: "Starting at \$1000",color: Colors.white,fWeight: FontWeight.w300,)
+                                      MyCustomText(
+                                        text: "Starting at \$1000",
+                                        color: Colors.white,
+                                        fWeight: FontWeight.w300,
+                                      )
                                     ],
                                   ),
                                   Icon(
