@@ -17,7 +17,11 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20, top: 35),
+              padding: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+                top: 35,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -68,7 +72,10 @@ class HomePage extends StatelessWidget {
                           height: 270,
                           width: 250,
                           margin: const EdgeInsets.only(
-                              right: 10, top: 10, bottom: 10,),
+                            right: 10,
+                            top: 10,
+                            bottom: 10,
+                          ),
                           decoration: BoxDecoration(
                             color: Colors.deepPurple,
                             borderRadius: BorderRadius.circular(15),
@@ -113,7 +120,10 @@ class HomePage extends StatelessWidget {
                           height: 270,
                           width: 250,
                           margin: const EdgeInsets.only(
-                            right: 10, top: 10, bottom: 10,),
+                            right: 10,
+                            top: 10,
+                            bottom: 10,
+                          ),
                           decoration: BoxDecoration(
                             color: Colors.deepPurple,
                             borderRadius: BorderRadius.circular(15),
@@ -158,7 +168,10 @@ class HomePage extends StatelessWidget {
                           height: 270,
                           width: 250,
                           margin: const EdgeInsets.only(
-                            right: 10, top: 10, bottom: 10,),
+                            right: 10,
+                            top: 10,
+                            bottom: 10,
+                          ),
                           decoration: BoxDecoration(
                             color: Colors.deepPurple,
                             borderRadius: BorderRadius.circular(15),
@@ -203,7 +216,10 @@ class HomePage extends StatelessWidget {
                           height: 270,
                           width: 250,
                           margin: const EdgeInsets.only(
-                            right: 10, top: 10, bottom: 10,),
+                            right: 10,
+                            top: 10,
+                            bottom: 10,
+                          ),
                           decoration: BoxDecoration(
                             color: Colors.deepPurple,
                             borderRadius: BorderRadius.circular(15),
@@ -248,7 +264,10 @@ class HomePage extends StatelessWidget {
                           height: 270,
                           width: 250,
                           margin: const EdgeInsets.only(
-                            right: 10, top: 10, bottom: 10,),
+                            right: 10,
+                            top: 10,
+                            bottom: 10,
+                          ),
                           decoration: BoxDecoration(
                             color: Colors.deepPurple,
                             borderRadius: BorderRadius.circular(15),
@@ -285,7 +304,6 @@ class HomePage extends StatelessWidget {
                         );
                       },
                     ),
-
                   ],
                 ),
               ),
