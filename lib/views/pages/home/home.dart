@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
                       itemBuilder: (context, index) {
                         return Container(
                           height: 270,
-                          width: 250,
+                          width: 220,
                           margin: const EdgeInsets.only(
                             right: 10,
                             top: 10,
@@ -89,16 +89,17 @@ class HomePage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Column(
                                     children: [
                                       MyCustomText(
                                         text: "Bermuda, USA",
                                         fSize: 20,
-                                        fWeight: FontWeight.w600,
+                                        fWeight: FontWeight.w700,
                                         color: Colors.white,
                                       ),
-                                      Text(" Starting at \$1000"),
+                                 MyCustomText(text: "Starting at \$1000",color: Colors.white,fWeight: FontWeight.w300,)
                                     ],
                                   ),
                                   Icon(
