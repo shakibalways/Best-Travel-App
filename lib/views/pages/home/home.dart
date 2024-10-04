@@ -110,45 +110,42 @@ class HomePage extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          height: 250,
-                          width: 200,
-                          margin: const EdgeInsets.only(right: 10, top: 10),
-                          decoration: BoxDecoration(
-                            color: Colors.deepPurple[100],
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                        );
-                      },
-                    ),
-                    ListView.builder(
-                      itemCount: 3,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          height: 250,
-                          width: 200,
-                          margin: const EdgeInsets.only(right: 10, top: 10),
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                        );
-                      },
-                    ),
-                    ListView.builder(
-                      itemCount: 3,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          height: 250,
-                          width: 200,
+                          height: 270,
+                          width: 250,
                           margin: const EdgeInsets.only(
-                            right: 10,
-                            top: 10,
-                          ),
+                            right: 10, top: 10, bottom: 10,),
                           decoration: BoxDecoration(
-                            color: Colors.pink,
+                            color: Colors.deepPurple,
                             borderRadius: BorderRadius.circular(15),
+                            image: const DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/images/tabBar/image 5.png"),
+                            ),
+                          ),
+                          child: const Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      MyCustomText(
+                                        text: "Bermuda, USA",
+                                        fSize: 20,
+                                        fWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                      ),
+                                      Text(" Starting at \$1000"),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.favorite,
+                                    color: Colors.white,
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
                         );
                       },
@@ -158,16 +155,137 @@ class HomePage extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          height: 250,
-                          width: 200,
-                          margin: const EdgeInsets.only(right: 10, top: 10),
+                          height: 270,
+                          width: 250,
+                          margin: const EdgeInsets.only(
+                            right: 10, top: 10, bottom: 10,),
                           decoration: BoxDecoration(
-                            color: Colors.yellow,
+                            color: Colors.deepPurple,
                             borderRadius: BorderRadius.circular(15),
+                            image: const DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/images/tabBar/image 5.png"),
+                            ),
+                          ),
+                          child: const Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      MyCustomText(
+                                        text: "Bermuda, USA",
+                                        fSize: 20,
+                                        fWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                      ),
+                                      Text(" Starting at \$1000"),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.favorite,
+                                    color: Colors.white,
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
                         );
                       },
                     ),
+                    ListView.builder(
+                      itemCount: 3,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: 270,
+                          width: 250,
+                          margin: const EdgeInsets.only(
+                            right: 10, top: 10, bottom: 10,),
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurple,
+                            borderRadius: BorderRadius.circular(15),
+                            image: const DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/images/tabBar/image 5.png"),
+                            ),
+                          ),
+                          child: const Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      MyCustomText(
+                                        text: "Bermuda, USA",
+                                        fSize: 20,
+                                        fWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                      ),
+                                      Text(" Starting at \$1000"),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.favorite,
+                                    color: Colors.white,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+                    ListView.builder(
+                      itemCount: 3,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: 270,
+                          width: 250,
+                          margin: const EdgeInsets.only(
+                            right: 10, top: 10, bottom: 10,),
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurple,
+                            borderRadius: BorderRadius.circular(15),
+                            image: const DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                  "assets/images/tabBar/image 5.png"),
+                            ),
+                          ),
+                          child: const Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      MyCustomText(
+                                        text: "Bermuda, USA",
+                                        fSize: 20,
+                                        fWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                      ),
+                                      Text(" Starting at \$1000"),
+                                    ],
+                                  ),
+                                  Icon(
+                                    Icons.favorite,
+                                    color: Colors.white,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+
                   ],
                 ),
               ),
