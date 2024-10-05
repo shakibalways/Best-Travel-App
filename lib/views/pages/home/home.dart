@@ -109,7 +109,7 @@ class HomePage extends StatelessWidget {
                                   ),
                                   Icon(
                                     Icons.favorite,
-                                    color: Colors.white,
+                                    color: Colors.white
                                   ),
                                 ],
                               ),
