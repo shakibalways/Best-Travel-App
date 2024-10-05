@@ -104,7 +104,7 @@ class HomePage extends StatelessWidget {
                                         text: "Starting at \$1000",
                                         color: Colors.white,
                                         fWeight: FontWeight.w300,
-                                      )
+                                      ),
                                     ],
                                   ),
                                   Icon(
