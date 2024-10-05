@@ -26,8 +26,7 @@ class Onboarding3 extends StatelessWidget {
           child: const MyCustomText(
             maxLines: 2,
             tAlign: TextAlign.center,
-            text:
-                "Finally, get ready for the tour and go to your desire destination.",
+            text: "Finally, get ready for the tour and go to your desire destination.",
             color: Colors.grey,
           ),
         )
