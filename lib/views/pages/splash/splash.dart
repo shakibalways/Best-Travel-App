@@ -15,7 +15,7 @@ class SplashPage extends StatelessWidget {
           children: [
             Image.asset("assets/images/splash/traveler.png"),
             const SizedBox(
-              height: 5
+              height: 5,
             ),
             const Text(
               "Traveler",
