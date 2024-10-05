@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget {
                     controller: homeController.searchController,
                     icon: Icons.search,
                   ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 30,),
                 ],
               ),
             ),
