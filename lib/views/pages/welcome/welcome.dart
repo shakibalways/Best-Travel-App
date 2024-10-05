@@ -55,7 +55,7 @@ class WelcomePage extends StatelessWidget {
                         offset: const Offset(1, 2),
                         color: Colors.grey.shade300,
                         blurRadius: 2,
-                        spreadRadius: 2
+                        spreadRadius: 2,
                       ),
                     ],
                   ),
