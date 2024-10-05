@@ -16,7 +16,7 @@ class Onboarding2 extends StatelessWidget {
           fSize: 28,
           fWeight: FontWeight.bold,
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 20,),
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: const MyCustomText(
