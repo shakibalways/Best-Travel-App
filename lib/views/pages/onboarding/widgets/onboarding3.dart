@@ -29,7 +29,7 @@ class Onboarding3 extends StatelessWidget {
             text: "Finally, get ready for the tour and go to your desire destination.",
             color: Colors.grey,
           ),
-        )
+        ),
       ],
     );
   }
