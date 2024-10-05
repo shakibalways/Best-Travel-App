@@ -233,7 +233,8 @@ class HomePage extends StatelessWidget {
                             image: const DecorationImage(
                               fit: BoxFit.cover,
                               image: AssetImage(
-                                  "assets/images/tabBar/image 5.png",),
+                                "assets/images/tabBar/image 5.png",
+                              ),
                             ),
                           ),
                           child: const Column(
